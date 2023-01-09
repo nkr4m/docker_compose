@@ -1,0 +1,17 @@
+// start-up the docker-compose.yaml file
+dokcer compose up -d
+
+//stop the compose
+docker compose stop
+
+//start the compose
+docker compose start
+
+//connect to the db with shell
+docker exec -it <pid> bash
+
+//run the shell
+mongosh mongodb://localhost:27017 -u rootuser -p rootpass
+
+//test
+show dbs;
